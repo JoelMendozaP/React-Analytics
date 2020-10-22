@@ -4,9 +4,9 @@ import ReactGa from "react-ga";
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize("G-CL2JXVLME1");
+    ReactGa.initialize("G-CK7B068EVB");
     ReactGa.pageview("/home");
-  });
+  }, []);
   return (
     <div className="App">
       <header className="App-header">Hola mundo</header>
