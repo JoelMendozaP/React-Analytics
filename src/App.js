@@ -1,17 +1,11 @@
 import React, { useEffect } from "react";
-import "./App.css";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 
-function App() {
+export default function App() {
   useEffect(() => {
-    ReactGa.initialize("G-KGSTLYFBPM");
-    ReactGa.pageview("/home");
+    ReactGA.initialize("G-KGSTLYFBPM");
+    ReactGA.pageview(window.location.pathname);
   }, []);
-  return (
-    <div className="App">
-      <header className="App-header">Hola mundo</header>
-    </div>
-  );
-}
 
-export default App;
+  return <h1>hello world</h1>;
+}
